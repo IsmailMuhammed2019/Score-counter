@@ -1,0 +1,64 @@
+
+*, html, body {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+
+
+}
+
+.main {
+    background: grey;
+    width: 800px;
+    height: 500px;
+    margin-top: 30px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.team1, .teamb {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+h1{
+    font-size: xx-large;
+    margin-bottom: 50px;
+}
+
+.score {
+    font-size: xxx-large;
+}
+
+.buttons{
+    display: flex;
+}
+
+.btn {
+    background: black;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    width: 100px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+    border: 2px solid black;
+}
