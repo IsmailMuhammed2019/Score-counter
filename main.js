@@ -5,6 +5,7 @@ let score = document.querySelector('.scorea');
 let scoreb = document.querySelector('.scoreb');
 let btns = document.querySelectorAll('.btn');
 let warning = document.querySelector('#warning');
+let warning1 = document.querySelector('#warning1');
 
 btns.forEach(btn => {
 
@@ -22,6 +23,8 @@ btns.forEach(btn => {
         }else {
             count = 0;
             countb = 0;
+            warning.textContent = " ";
+            warning1.textContent = " ";
         }
         score.textContent = count;
         scoreb.textContent = countb;
@@ -34,14 +37,14 @@ btns.forEach(btn => {
             warning.textContent = "You are winning the Game"
         }else if(countb < 0){
             scoreb.style.color= "red";
-            warning.textContent = "You are losing the Game"
+            warning1.textContent = "You are losing the Game"
         }else if (countb > 0){
             scoreb.style.color = "green"
-            warning.textContent = "You are winning the Game"
+            warning1.textContent = "You are winning the Game"
         }
         else{
-            score.style.color = "white";
-            scoreb.style.color= "white";
+            score.style.color = "grey";
+            scoreb.style.color= "grey";
         }
     }
     )
